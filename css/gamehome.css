@@ -1,0 +1,146 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    background: #ccc;
+  }
+
+.cont{
+    width: 700px;
+    height: 400px;
+    /* background-color: rgb(12, 142, 255); */
+}
+
+h1 {
+  position: relative;
+  top: 80px;
+  font-family: 'Bree Serif', serif;
+  font-weight: bold;
+  font-size: 70px;
+  color: #422800;
+  text-align: center;
+}
+
+button {
+    position:relative;
+    font-family: 'Zilla Slab', serif;
+    font-weight: 300;
+    top: 180px;
+    background-color: transparent;
+    border: none;
+    outline:0;
+    color:white;
+    width: 700px;
+    height: 100px;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .button1 {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    width: 200px;
+    height: 55px;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Bree Serif', serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0 18px;
+    margin: 20px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    
+  }
+  .button2 {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    width: 200px;
+    height: 55px;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Bree Serif', serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0 18px;
+    margin: 20px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button1:hover {
+    background-color: #fff;
+  }
+  .button2:hover {
+    background-color: #fff;
+  }
+  
+  .button1:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  .button2:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+
+
+
+  .long-arrow-left {
+    position: absolute;
+    float: left;
+    left: 2rem;
+    top: 1.3rem;
+  }
+
+  .long-arrow-left{
+    display: block;
+    margin: 15px auto;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #422800;
+    border-left: 2px solid #422800;
+  }
+
+  .arrow-left,
+  .long-arrow-left{
+   transform: rotate(-45deg);
+  }
+
+  .long-arrow-left::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 35px;
+    background-color: #422800;
+    transform: rotate(-45deg) translate(11.7px, 4px);
+    left: 0;
+    top: 0;
+  }
+
+
+@media (min-width: 768px) {
+  .button1 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+  .button2 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}

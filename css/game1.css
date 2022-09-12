@@ -1,0 +1,139 @@
+
+body {
+    background: url(https://media.giphy.com/media/FizSVay8SBrEI/giphy.gif);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 1700px 1300px;
+}
+
+.dragme {
+    position: absolute;
+    width: 180px;
+    cursor: move;
+  }
+  
+  #draggable {
+    background-color: #ccc;
+    border: 1px solid #000;
+  }
+  
+  .instruction{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    text-shadow: 0 9px 9px rgba(0, 0, 0, 0.5);
+    /* background: #ccc; */
+  }
+h1 {
+position: relative;
+z-index: 1;
+font-family: 'Lobster Two', cursive;
+font-size: 60px;
+top: 20px;
+left: 0px;
+margin-top: 0;
+text-align: center;
+color: white;
+/* background-color: white; */
+  }
+
+h2 {
+position: relative;
+z-index: 1;
+font-family: 'Lobster Two', cursive;
+font-size: 40px;
+top: -20px;
+left: 0px;
+text-align: center;
+color: white;
+/* background-color: white; */
+ }
+
+ /* arrow */
+
+ .long-arrow-left {
+  position: absolute;
+  float: left;
+  left: 2rem;
+  top: 1.3rem;
+  z-index: 2;
+}
+
+.long-arrow-left{
+  display: block;
+  margin: 15px auto;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  z-index: 2;
+}
+
+.arrow-left,
+.long-arrow-left{
+ transform: rotate(-45deg);
+ z-index: 2;
+}
+
+.long-arrow-left::after{
+  content: "";
+  display: block;
+  width: 2px;
+  height: 35px;
+  background-color: white;
+  transform: rotate(-45deg) translate(11.7px, 4px);
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+/* popup */
+
+.popup {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  cursor: pointer;
+}
+
+/* The actual popup */
+.popuptext {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  visibility: hidden;
+  top: 140px;
+  width: 440px;
+  height: 210px;
+  background-color: rgb(255, 177, 177);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 48px;
+  z-index: 110;
+  left: 50%;
+  margin-left: -220px; 
+}
+
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

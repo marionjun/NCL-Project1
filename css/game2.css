@@ -1,0 +1,131 @@
+body {
+    background-image: url("assets/bg5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#display {
+    position: relative;
+    text-align: center;
+    top: 530px;
+    font-size: 45px;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 9px 9px rgba(0, 0, 0, 0.25);
+}
+
+.question-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  #questionbox {
+    position: relative;
+    width: 700px;
+    height: 45px;
+    font-size: 25px;
+    background: #FFFFFF;
+    border: none;
+    font-family: 'Cherry Swash', cursive;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 40px;
+    box-shadow: 0 9px 11px rgba(0, 0, 0, 0.4);
+}
+
+#enter {
+   display: none;
+}
+
+
+
+#threed {
+  background: #0f0f0f;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  margin: auto;
+  margin-top: 200px;
+  display: block;
+  box-shadow: 15px 15px 70px 6px #5f5f5f;
+  margin-bottom: 150px;
+}
+  .button {
+    background: #f00000;
+    width: 70%;
+    height: 70%;
+    position: relative;
+    top: 0%;
+    left: 15%;
+    box-shadow: 0 20px 0 0 #8C0606;
+    border: none;
+    transition: all .5s ease;
+    
+  }
+.button:active {
+      box-shadow: 0 1px 1px 1px #8C0606;
+      top: 10%;
+  }
+.circle {
+  border-radius: 50%;
+
+}
+
+.smiley {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+
+}
+
+#happy {
+    position: relative;
+    display: none;
+ }
+
+ #sad {
+    position: relative;
+    display: none;
+ }
+
+ #hello {
+    position: relative;
+    display: block;
+ }
+
+  /* arrow */
+
+  .long-arrow-left {
+    position: absolute;
+    float: left;
+    left: 2rem;
+    top: 1.3rem;
+  }
+  
+  .long-arrow-left{
+    display: block;
+    margin: 15px auto;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+  }
+  
+  .arrow-left,
+  .long-arrow-left{
+   transform: rotate(-45deg);
+  }
+  
+  .long-arrow-left::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 35px;
+    background-color: white;
+    transform: rotate(-45deg) translate(11.7px, 4px);
+    left: 0;
+    top: 0;
+  }
